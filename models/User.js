@@ -78,7 +78,7 @@ userSchema.statics.findByToken = function (token, cb) {
     // UserID를 이용하여 유저를 찾은 다음
     // Client에서 가져온 Token과 DB에 있는 Token이 일치하는지 확인
 
-    user.findOne({ "_id:": decoded, token: token }, function(err, user));
+    user.findOne({ "_id:": decoded, token: token }, function (err, user) {});
   });
 };
 
